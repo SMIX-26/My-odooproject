@@ -97,7 +97,7 @@ export function TagSelector({ value, onChange, placeholder, maxTags = 5 }: TagSe
         </div>
       </div>
 
-      {/* Suggestions */}
+      
       {showSuggestions && suggestions.length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-1 bg-popover border rounded-md shadow-md z-50 max-h-48 overflow-y-auto">
           {suggestions.map((tag) => (

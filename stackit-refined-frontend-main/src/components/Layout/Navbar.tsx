@@ -33,7 +33,7 @@ export function Navbar() {
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
+          
           <Link to="/" className="flex items-center space-x-2">
             <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">S</span>
@@ -41,7 +41,7 @@ export function Navbar() {
             <span className="font-bold text-xl">StackIt</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
@@ -57,10 +57,10 @@ export function Navbar() {
               </Link>
             ))}
           </div>
-
-          {/* Right Side */}
+          
+              
           <div className="flex items-center space-x-4">
-            {/* Search Bar - Hidden on mobile */}
+            
             <div className="hidden lg:flex relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
@@ -69,7 +69,7 @@ export function Navbar() {
               />
             </div>
 
-            {/* Theme Toggle */}
+            
             <Button
               variant="ghost"
               size="sm"
@@ -85,7 +85,7 @@ export function Navbar() {
 
             {isAuthenticated ? (
               <>
-                {/* Ask Question Button */}
+                
                 <Button asChild size="sm" className="hidden md:flex">
                   <Link to="/ask">
                     <Plus className="h-4 w-4 mr-2" />
@@ -93,10 +93,10 @@ export function Navbar() {
                   </Link>
                 </Button>
 
-                {/* Notifications */}
+                
                 <NotificationPanel />
 
-                {/* User Menu */}
+                
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className="relative h-9 w-9 rounded-full">

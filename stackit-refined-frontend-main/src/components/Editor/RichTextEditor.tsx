@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { 
   Bold, 
@@ -54,7 +53,7 @@ export function RichTextEditor({ value, onChange, placeholder }: RichTextEditorP
 
   return (
     <div className="border rounded-md bg-background">
-      {/* Toolbar */}
+      
       <div className="flex items-center gap-1 p-2 border-b bg-muted/50">
         <Button
           type="button"
@@ -166,7 +165,7 @@ export function RichTextEditor({ value, onChange, placeholder }: RichTextEditorP
         </Button>
       </div>
       
-      {/* Editor */}
+      
       <div className="relative">
         <div
           ref={editorRef}
