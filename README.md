@@ -7,4 +7,4 @@ Team name : The Fellowship Of Code
 email: samikshyajena26@gmail.com
 anubhavjaiswal2002@gmail.com
 subhashreemishrs45@gmail.com
-farhadshahidabdul45@gmail.com
+farhadshahidabdul@gmail.com
