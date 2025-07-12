@@ -142,7 +142,7 @@ export function Navbar() {
               </div>
             )}
 
-            {/* Mobile Menu Button */}
+            
             <Button
               variant="ghost"
               size="sm"
@@ -158,17 +158,17 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t">
-              {/* Search Bar */}
+              
               <div className="relative mb-4">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input placeholder="Search..." className="pl-10" />
               </div>
 
-              {/* Navigation Links */}
+              
               {navigation.map((item) => (
                 <Link
                   key={item.name}
